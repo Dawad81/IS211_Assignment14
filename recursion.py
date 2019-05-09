@@ -26,14 +26,31 @@ def gcd(a, b):
 
 print gcd(30, 20)
 
+# def compareTo(s1, s2):
+#     if s1[0] < s2[0]:
+#         return -1,compareTo(s1[1:], s2[1:])
+#     elif s1[0] == s2[0]:
+#         return 0,compareTo(s1[1:], s2[1:])
+#     elif s1[0] > s2[0]:
+#         return +1,compareTo(s1[1:], s2[1:])
+#     #compareTo(s1[1:], s2[1:])
+#
+# print compareTo('Happy', 'Happer')
+
+
 def compareTo(s1, s2):
+    #s1= [i for i in s1]
+    #s2= [i for i in s2]
+
     if s1[0] < s2[0]:
-        return -1,compareTo(s1[1:], s2[1:])
-    elif s1[0] == s2[0]:
-        return 0,compareTo(s1[1:], s2[1:])
+        return -1
     elif s1[0] > s2[0]:
-        return +1,compareTo(s1[1:], s2[1:])
-    #compareTo(s1[1:], s2[1:])
+        return +1
+    elif s1[0] == s2[0]:
+        return 0, compareTo(s1[1:], s2[1:])
 
-print compareTo('Happy', 'Happer')
 
+
+
+test = compareTo('cad', 'cad')
+print test
